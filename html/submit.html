@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <!-- Boxicons CSS link -->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        /* CSS styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        .icon {
+            font-size: 4rem;
+            color: #4CAF50; /* Green color for success */
+            margin-bottom: 1rem;
+        }
+        .message {
+            font-size: 1.5rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Success Icon -->
+        <i class="bx bx-check-circle icon"></i>
+        <p class="message">Submission Successful!</p>
+    </div>
+    
+    <!-- Redirect Script -->
+    <script>
+        // Redirect to home.html after 3 seconds
+        setTimeout(() => {
+            window.location.href = 'home.html';
+        }, 3000);
+    </script>
+</body>
+</html>

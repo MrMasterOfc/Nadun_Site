@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Web Access</title>
+  <link rel="stylesheet" href="/css/access.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+  <canvas id="matrixCanvas"></canvas>
+  <div class="login-container">
+    <h2>Login</h2>
+    <div class="input-container">
+      <i class="bx bx-user"></i>
+      <input type="text" id="username" placeholder="Username">
+    </div>
+    <div class="input-container">
+      <i class="bx bx-lock-alt"></i>
+      <input type="password" id="password" placeholder="Password">
+    </div>
+    <button onclick="login()">Login</button>
+    <audio id="accessSound" src="/media/Access.mp3" preload="auto"></audio>
+    <audio id="incorrectSound" src="/media/incorrect.mp3" preload="auto"></audio>
+    <audio id="backgroundMusic" src="/media/back.mp3" preload="auto" loop></audio>
+  </div>
+  <script src="/js/access.js"></script>
+</body>
+</html>
